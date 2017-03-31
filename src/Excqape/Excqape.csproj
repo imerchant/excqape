@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp1.1</TargetFramework>
+    <Copyright>Copyright ©  2016</Copyright>
+    <Description>Excqape interfaces provide support for the combination of several design patterns: the Command Pattern, the Decorator Pattern, and the 'Exchange' Pattern.  It abstracts any storage paradigm (relational, key-value, document, etc.), without the ugliness of repositories.</Description>
+    <Authors>Brent Arias</Authors>
+    <PackageReleaseNotes>Code taken from .NET Junkie, but with asynchrony introduced and some name changes</PackageReleaseNotes>
+    <Company />
+    <PackageTags>"DAL", "Repository", "CQRS", "Excqape", "Escape"</PackageTags>
+    <PackageProjectUrl>https://github.com/brentarias/excqape</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/brentarias/qhsm/blob/master/LICENSE</PackageLicenseUrl>
+    <AssemblyVersion>0.7.1.*</AssemblyVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Properties\" />
+  </ItemGroup>
+
+</Project>
