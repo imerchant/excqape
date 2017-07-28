@@ -10,7 +10,8 @@
     <PackageTags>"DAL", "Repository", "CQRS", "Excqape", "Escape"</PackageTags>
     <PackageProjectUrl>https://github.com/brentarias/excqape</PackageProjectUrl>
     <PackageLicenseUrl>https://github.com/brentarias/qhsm/blob/master/LICENSE</PackageLicenseUrl>
-    <AssemblyVersion>0.7.1.*</AssemblyVersion>
+    <AssemblyVersion>0.7.1.0</AssemblyVersion>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
   </PropertyGroup>
 
   <ItemGroup>
