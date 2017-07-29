@@ -1,17 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Excqape
+﻿namespace Excqape
 {
-    public interface IQuerySpec { }
+	public interface IQuerySpec
+	{
+	}
 
-    public interface IQuerySpec<TResult> : IQuerySpec { }
+	public interface IQuerySpec<TResult> : IQuerySpec
+	{
+	}
 
-    public interface IPagedQuerySpec<TResult> : IQuerySpec<Paged<TResult>>
-    {
-        PagingInformation Paging { get; set; }
-    }
+	public interface IPagedQuerySpec<TResult> : IQuerySpec<PagedResult<TResult>>
+	{
+		PagingRequest Paging { get; }
+	}
 }

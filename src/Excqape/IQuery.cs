@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace Excqape
 {
-    public interface IQuery<TQuery, TResult> where TQuery : IQuerySpec<TResult>
-    {
-        Task<TResult> Handle(TQuery query);
-    }
+	public interface IQuery<in TQuery, TResult> where TQuery : IQuerySpec<TResult>
+	{
+		Task<Response<TResult>> Handle(TQuery query);
+	}
 }
