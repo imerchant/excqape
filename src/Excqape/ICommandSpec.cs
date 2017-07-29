@@ -1,6 +1,6 @@
 ﻿namespace Excqape
 {
-    public interface ICommandSpec
-    {
-    }
+	public interface ICommandSpec
+	{
+	}
 }

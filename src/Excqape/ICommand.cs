@@ -2,8 +2,8 @@
 
 namespace Excqape
 {
-    public interface ICommand<in TCommand> where TCommand : ICommandSpec
-    {
-        Task<Response> Handle(TCommand command);
-    }
+	public interface ICommand<in TCommand> where TCommand : ICommandSpec
+	{
+		Task<Response> Handle(TCommand command);
+	}
 }
