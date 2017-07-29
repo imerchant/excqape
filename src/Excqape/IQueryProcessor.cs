@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace Excqape
 {
@@ -36,6 +32,6 @@ namespace Excqape
     /// </code>
     public interface IQueryProcessor
     {
-        Task<TResult> Execute<TResult>(IQuerySpec<TResult> query);
+        Task<Response<TResult>> Execute<TResult>(IQuerySpec<TResult> query);
     }
 }

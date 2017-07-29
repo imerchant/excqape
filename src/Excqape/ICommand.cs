@@ -1,13 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 
 namespace Excqape
 {
-    public interface ICommand<TCommand>
+    public interface ICommand<in TCommand> where TCommand : ICommandSpec
     {
-        Task Handle(TCommand command);
+        Task<Response> Handle(TCommand command);
     }
 }
